@@ -17,7 +17,7 @@ export default function DashboardLayout() {
 
       <div className="flex">
         {/* Desktop sidebar */}
-        <aside className="hidden md:block w-64 border-r bg-white">
+        <aside className="hidden md:block w-64 border-r h-screen bg-white">
           <Sidebar />
         </aside>
 
@@ -26,6 +26,7 @@ export default function DashboardLayout() {
           <Outlet />
         </main>
       </div>
+      {/* ----------------------------------- */}
 
       {/* Mobile sidebar Drawer */}
       {isMobileOpen && (
